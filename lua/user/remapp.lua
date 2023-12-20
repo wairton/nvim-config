@@ -69,7 +69,7 @@ cmp.setup({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {},
+  ensure_installed = {'rust_analyzer', 'pyright'},
   handlers = {
     lsp_zero.default_setup,
   },
